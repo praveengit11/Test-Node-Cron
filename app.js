@@ -20,7 +20,7 @@ const main = async (req, res) => {
     await sendMessageToGoogleSpace(message);
 
     // Send a success response
-    res.status(200).send(`Message sent successfully at ${time}`);
+    res.status(200).send(`Cron message sent successfully at ${time}`);
   } catch (error) {
     console.error('Error while sending message:', error);
     res.status(500).send('Error while sending a message');
